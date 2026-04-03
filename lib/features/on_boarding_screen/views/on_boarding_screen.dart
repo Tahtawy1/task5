@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nti_task5/screens/operations_screen.dart';
+import 'package:nti_task5/features/auth/views/sign_in_view.dart';
+import 'package:nti_task5/features/on_boarding_screen/views/operations_screen.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -14,11 +15,11 @@ class OnBoardingScreen extends StatelessWidget {
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage('assets/images/bg.jpeg'),
-            fit: BoxFit.cover, // ✅ إضافة fit
+            fit: BoxFit.cover,
           ),
         ),
         child: Align(
-          alignment: Alignment.bottomCenter, // ✅ تحديد الموقع
+          alignment: Alignment.bottomCenter,
           child: GestureDetector(
             onTap: () => Navigator.push(
               context,

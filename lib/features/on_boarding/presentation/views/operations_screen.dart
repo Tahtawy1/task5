@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nti_task5/features/auth/views/sign_in_view.dart';
+import 'package:nti_task5/features/auth/presentation/views/sign_in/sign_in_view.dart';
+import 'package:nti_task5/features/auth/presentation/views/sign_up/sign_up_view.dart';
 
 class OperationsScreen extends StatelessWidget {
   const OperationsScreen({super.key});
@@ -73,6 +74,10 @@ class OperationsScreen extends StatelessWidget {
                   SizedBox(height: 20),
 
                   GestureDetector(
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => SignUpView()),
+                    ),
                     child: Container(
                       alignment: Alignment(0, 0),
                       height: 40,

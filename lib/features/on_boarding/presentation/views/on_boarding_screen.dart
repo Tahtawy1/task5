@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nti_task5/features/auth/views/sign_in_view.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:nti_task5/features/auth/presentation/view_model/auth_bloc/auth_bloc.dart';
+import 'package:nti_task5/features/auth/presentation/views/sign_in/sign_in_view.dart';
 import 'package:nti_task5/features/on_boarding_screen/views/operations_screen.dart';
 
 class OnBoardingScreen extends StatelessWidget {

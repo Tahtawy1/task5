@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:nti_task5/features/auth/widgets/sign_in_form.dart';
+import 'package:nti_task5/features/auth/presentation/views/sign_in/widgets/sign_in_form.dart';
+import 'package:nti_task5/features/auth/presentation/views/sign_up/widgets/sign_up_form.dart';
 
-class SignInView extends StatelessWidget {
-  const SignInView({super.key});
+class SignUpView extends StatelessWidget {
+  const SignUpView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,14 +14,15 @@ class SignInView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'مرحباََ بعودتك!',
+              'إنشاء حساب جديد',
               style: TextStyle(
                 fontSize: 32,
                 fontFamily: 'Tajawal',
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SignInForm(),
+            SizedBox(height: 16),
+            SignUpForm(),
           ],
         ),
       ),

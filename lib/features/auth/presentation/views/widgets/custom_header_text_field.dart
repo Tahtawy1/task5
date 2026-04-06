@@ -24,9 +24,12 @@ class _CustomHeaderTextFieldState extends State<CustomHeaderTextField> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12),
-          child: Text(widget.title),
+        Align(
+          alignment: Alignment.centerRight,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            child: Text(widget.title),
+          ),
         ),
         Container(
           decoration: BoxDecoration(
